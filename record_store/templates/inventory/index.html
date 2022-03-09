@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    {% for artist in artists %}
+        <H2>{{ artist.name }}</H2>
+
+        <ul>
+            {% for album in artist.album_set.all %}
+            <li>{{ album.title }} - {{ album.year }}</li>
+                
+            {% endfor %}
+        </ul>
+        
+    {% endfor %}
+
+
+{% endblock content %}
