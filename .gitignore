@@ -2,4 +2,4 @@
 bin
 lib
 
-SECRET_KEY
+secretKey.py
